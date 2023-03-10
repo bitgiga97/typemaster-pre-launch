@@ -1,0 +1,238 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    background: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.3rem;
+    margin-bottom: 6.4rem;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2.4rem;
+}
+
+.btn-header {
+    width: 15rem;
+    height: 4.8rem;
+    background: #E8EFF2;
+    border-radius: 0.8rem;
+    border: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+
+/* Typography */
+
+.pre-order>h1 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+.pre-order>p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #7B8BAD;
+}
+
+.btn-main {
+    width: 15rem;
+    height: 4.8rem;
+    background: #F16718;
+    border-radius: 0.8rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+.button-main>p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: #7B8BAD;
+}
+
+.text>h2 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+.text>p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #7B8BAD;
+}
+
+.compatible>h3,
+.wireless>h3,
+.battery>h3,
+.rgb-modes>h3 {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+.compatible>p,
+.wireless>p,
+.battery>p,
+.rgb-modes>p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #7B8BAD;
+}
+
+.card-logo {
+    width: 6.5rem;
+    height: 6.5rem;
+    background: #F16718;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+
+footer>p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #7B8BAD;
+}
+
+
+/* Positioning */
+
+.pre-order>img {
+    width: 37.2rem;
+    height: 33.1rem;
+    border-radius: 2rem 0 0 2rem;
+    margin-bottom: 2.4rem;
+}
+
+.bg-wrap {
+    width: 12.9rem;
+    height: 19.3rem;
+    background-image: url(./assets/mobile/image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #F16718;
+    background-blend-mode: multiply;
+    opacity: 0.75;
+    border-radius: 0 2rem 2rem 0;
+    margin-left: -2.4rem;
+    filter: contrast(1.4);
+}
+
+.img-2 {
+    width: 22rem;
+    height: 19.3rem;
+    border-radius: 2rem;
+    margin-left: 2.4rem;
+}
+
+.pre-order {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 2.4rem;
+    overflow-x: hidden;
+}
+
+.button-main {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.2rem;
+}
+
+.img {
+    margin-bottom: 7.5rem;
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2.4rem;
+    gap: 2.4rem;
+    margin-bottom: 11.1rem;
+}
+
+.text>h2 {
+    padding: 0 6rem;
+}
+
+.cards>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 6.4rem;
+    padding: 0 2.4rem;
+}
+
+footer {
+    margin-top: 3.2rem;
+    display: flex;
+    justify-content: center;
+}
