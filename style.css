@@ -17,11 +17,11 @@ header {
     height: 4.8rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 2.3rem;
     margin-bottom: 6.4rem;
     align-items: center;
     box-sizing: border-box;
     padding: 0 2.4rem;
+    padding-top: 2.3rem;
 }
 
 .btn-header {
@@ -42,7 +42,7 @@ header {
 
 /* Typography */
 
-.pre-order>h1 {
+.content>h1 {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 900;
@@ -50,15 +50,17 @@ header {
     line-height: 4.8rem;
     text-transform: uppercase;
     color: #162542;
+    padding-left: 2.4rem;
 }
 
-.pre-order>p {
+.content>p {
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: #7B8BAD;
+    padding-left: 2.4rem;
 }
 
 .btn-main {
@@ -76,6 +78,14 @@ header {
     border: none;
 }
 
+.button-main {
+    padding-left: 2.4rem;
+}
+
+.keyboard {
+    padding-left: 2.4rem;
+}
+
 .button-main>p {
     font-family: 'Barlow';
     font-style: normal;
@@ -84,6 +94,7 @@ header {
     line-height: 2.6rem;
     text-transform: uppercase;
     color: #7B8BAD;
+    padding-right: 2.4rem;
 }
 
 .text>h2 {
@@ -157,7 +168,16 @@ footer>p {
 
 /* Positioning */
 
-.pre-order>img {
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    /* padding-left: 4rem; */
+}
+
+.keyboard>img {
     width: 37.2rem;
     height: 33.1rem;
     border-radius: 2rem 0 0 2rem;
@@ -178,7 +198,7 @@ footer>p {
     filter: contrast(1.4);
 }
 
-.img-2 {
+.mobile-img2 {
     width: 22rem;
     height: 19.3rem;
     border-radius: 2rem;
@@ -191,7 +211,7 @@ footer>p {
     gap: 3.2rem;
     justify-content: center;
     box-sizing: border-box;
-    padding: 0 2.4rem;
+    /* padding: 0 2.4rem; */
     overflow-x: hidden;
 }
 
@@ -199,8 +219,9 @@ footer>p {
     display: flex;
     gap: 3.2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 3.2rem;
+    width: 100%;
 }
 
 .img {
@@ -236,4 +257,217 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
+}
+
+.tablet-img1,
+.desktop-img1,
+.tablet-img2,
+.desktop-img2 {
+    display: none;
+}
+
+
+/* Responsive design for tablet version */
+
+@media screen and (min-width: 768px) {
+    .mobile-img1,
+    .mobile-img2 {
+        display: none;
+    }
+    .tablet-img1,
+    .tablet-img2 {
+        display: block;
+    }
+    header {
+        padding: 4rem 4rem 0 4rem;
+        margin-bottom: 6.2rem;
+        height: 5.8rem;
+    }
+    .btn-header {
+        width: 17.5rem;
+    }
+    .pre-order {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .content>h1 {
+        padding-left: 4rem;
+    }
+    .content>p {
+        padding-left: 4rem;
+    }
+    .button-main {
+        padding-left: 7rem;
+    }
+    .button-main>p {
+        padding-right: 4rem;
+    }
+    .keyboard {
+        background-image: url(./assets/tablet/image-keyboard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 42.5rem;
+        border-radius: 2rem 0 0 2rem;
+    }
+    .bg-wrap {
+        width: 21.4rem;
+        height: 32rem;
+        border-radius: 2rem;
+        margin-left: 4rem;
+        background-image: url(./assets/tablet/image-phone-and-keyboard.jpg);
+    }
+    .img {
+        gap: 3rem;
+        margin-bottom: 7.2rem;
+    }
+    .tablet-img2 {
+        width: 44.5rem;
+        height: 32rem;
+        border-radius: 2rem;
+    }
+    .text {
+        flex-direction: row;
+        gap: 3.6rem;
+        align-items: center;
+        margin-bottom: 14.2rem;
+    }
+    .text>h2 {
+        padding: 0;
+        text-align: left;
+        padding-left: 2rem;
+    }
+    .text>p {
+        text-align: left;
+    }
+    .cards>div {
+        width: 28.1rem;
+        height: 28.9rem;
+        margin-bottom: 7.2rem;
+        padding-left: 4rem;
+        align-items: flex-start;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .compatible>h3,
+    .wireless>h3,
+    .battery>h3,
+    .rgb-modes>h3 {
+        text-align: left;
+    }
+    .compatible>p,
+    .wireless>p,
+    .battery>p,
+    .rgb-modes>p {
+        text-align: left;
+    }
+}
+
+
+/* Responsive styles for desktop version */
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url(./assets/shared/pattern-square.svg);
+        background-repeat: no-repeat;
+        background-position: top 20rem left 110%;
+    }
+    html {
+        overflow-x: hidden;
+    }
+    .img {
+        background-image: url(./assets/shared/pattern-square.svg);
+        background-repeat: no-repeat;
+        background-position: top 24rem right 120%;
+    }
+    header {
+        justify-content: space-between;
+        padding: 5.5rem 16.5rem 8.3rem 16.5rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pre-order {
+        gap: 12.5rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .content {
+        width: 44.5rem;
+        height: 31.2rem;
+    }
+    .button-main {
+        justify-content: flex-start;
+    }
+    .keyboard {
+        background-image: url(./assets/desktop/image-keyboard.jpg);
+        width: 54rem;
+        height: 48rem;
+        border-radius: 2rem;
+        padding: 0;
+    }
+    /* Typography */
+    .content>h1 {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+    }
+    .content>p {
+        font-size: 1.8rem;
+    }
+    .text>h2 {
+        padding: 0;
+    }
+    /* Positioning */
+    .bg-wrap {
+        width: 25.5rem;
+        height: 48rem;
+        background-image: url(./assets/desktop/image-phone-and-keyboard.jpg);
+        margin-left: 16.5rem;
+    }
+    .tablet-img2 {
+        display: none;
+    }
+    .desktop-img2 {
+        display: block;
+        width: 44.5rem;
+        height: 48rem;
+        border-radius: 2rem;
+    }
+    .img-text {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        margin-bottom: 16.8rem;
+    }
+    .text {
+        width: 25.5rem;
+        height: 26.5rem;
+        flex-direction: column;
+        gap: 2.7rem;
+        flex-direction: column;
+        margin: 12.2rem 16.5rem 0 12.5rem;
+    }
+    .cards {
+        display: flex;
+    }
+    /* Hover styles */
+    .btn-header:hover {
+        cursor: pointer;
+        background: #162542;
+        color: white;
+    }
+    .btn-main:hover {
+        cursor: pointer;
+        background: #FF9B62;
+    }
 }
